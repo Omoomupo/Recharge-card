@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <title>Recharge Cards </title>
+    
+</head>
+    <body>
+    <div id="selectOption">   
+        <!--Mtn recharge options-->
+
+        <select id="mtn1" class="select">
+            <option value="98" id="mtn100" class="option">MTN 100</option>
+        </select>
+        <input type="number" id="num1" class="num" value="">
+        <button onclick="multiplyTheValueOfMtn100ByTheQuantity()" class="add">ADD</button>
+        <br>
+
+        <select id="mtn2" class="select">
+            <option value="196" id="mtn200" class="option">MTN 200</option>
+        </select>
+        <input type="number" id="num2" class="num" value="">
+        <button onclick="multiplyTheValueOfMtn200ByTheQuantity()" class="add" >ADD</button>
+        <br>
+
+        <select id="mtn3" class="select">
+            <option value="490" id="mtn500" class="option">MTN 500</option>
+        </select>
+        <input type="number" id="num3" class="num" value="">
+        <button onclick="multiplyTheValueOfMtn500ByTheQuantity()" class="add" >ADD</button>
+        <br>
+
+        <select id="mtn4" class="select" >
+            <option value="980" id="mtn1000" class="option">MTN 1000</option>
+        </select>
+        <input type="number" id="num4" class="num" value="">
+        <button onclick="multiplyTheValueOfMtn1000ByTheQuantity()" class="add" >ADD</button>
+        <br>
+
+        <!--Airtel recharge options-->
+        <select id="airtel1" class="select">
+            <option value="96.5" id="airtel100" class="option">AIRTEL 100</option>
+            <input type="number" id="num5" class="num" value="">
+            <button onclick="multiplyTheValueOfAirtel100ByTheQuantity()" class="add" >ADD</button>
+        </select><br>
+
+        <select id="airtel2" class="select">
+            <option value="193" id="airtel200" class="option">AIRTEL 200</option>
+            <input type="number" id="num6" class="num" value="">
+            <button onclick="multiplyTheValueOfAirtel200ByTheQuantity()" class="add" >ADD</button>
+        </select><br>
+
+        <select id="airtel3" class="select">
+            <option value="485" id="airtel500" class="option">AIRTEL 500</option>
+        </select>
+        <input type="number" id="num7" class="num" value="">
+        <button onclick="multiplyTheValueOfAirtel500ByTheQuantity()" class="add" >ADD</button>
+        <br>
+
+        <select id="airtel4" class="select">
+            <option value="970" id="airtel1000" class="option">AIRTEL 1000</option>
+        </select>
+        <input type="number" id="num8" class="num" value="">
+        <button onclick="multiplyTheValueOfAirtel1000ByTheQuantity()" class="add" >ADD</button>
+        <br>
+
+        <!--Glo recharge option-->
+        <select id="glo1" class="select">
+            <option value="96.5" id="glo100" class="option">GLO 100</option>
+        </select>
+        <input type="number" id="num9" class="num" value="">
+        <button onclick="multiplyTheValueOfGlo100ByTheQuantity()" class="add" >ADD</button>
+        <br>
+
+        <select id="glo2" class="select">
+            <option value="193" id="glo200" class="option">GLO 200</option>
+        </select>
+        <input type="number" id="num10" class="num" value="">
+        <button onclick="multiplyTheValueOfGl200ByTheQuantity()"  class="add" >ADD</button>
+        <br>
+
+        <select id="glo3" class="select">
+            <option value="485" id="glo500" class="option">GLO 500</option>
+        </select>
+        <input type="number" id="num11" class="num" value="">
+        <button onclick="multiplyTheValueOfGlo500ByTheQuantity()" class="add" >ADD</button>
+        <br>
+
+        <select id="glo4" class="select">
+            <option value="970" id="glo1000" class="option">GLO 1000</option>
+        </select>
+        <input type="number" id="num12" class="num" value="">
+        <button onclick="multiplyTheValueOfGlo1000ByTheQuantity()" class="add" >ADD</button>
+        <br>
+
+        <!--9mobile recharge option-->
+        <select id="9mobile1" class="select">
+            <option value="96" id="9mobile100" class="option">9MOBILE 100</option>
+        </select>
+        <input type="number" id="num13" class="num" value="">
+        <button onclick="multiplyTheValueOfMobile100ByTheQuantity()" class="add" >ADD</button>
+        <br>
+
+        <select id="9mobile2" class="select">
+            <option value="192" id="9mobile200" class="option">9MOBILE 200</option>
+        </select>
+        <input type="number" id="num14" class="num" value="">
+        <button onclick="multiplyTheValueOfMobile200ByTheQuantity()" class="add" >ADD</button>
+        <br>
+
+        <select id="9mobile3" class="select">
+            <option value="480" id="9mobile500" class="option">9MOBILE 500</option>
+        </select>
+        <input type="number" id="num15" class="num" value="">
+        <button onclick="multiplyTheValueOfMobile500ByTheQuantity()" class="add" >ADD</button>
+        <br>
+
+        <select id="9mobile4" class="select">
+            <option value="960" id="9mobile1000" class="option">9MOBILE 1000</option>
+        </select>
+        <input type="number" id="num16" class="num" value="">
+        <button onclick="multiplyTheValueOfMobile1000ByTheQuantity()" class="add" >ADD</button>
+        <br>
+        <button onclick="calculateAll()" class="calculate" >CALCULATE</button>
+    </div>
+    <div id="table">
+        <h3  class="number"> OMOOMUPO ENTERPRISE</h3>
+        <p class="number">11, Moshalashi street Etegbin ojo Lagos. </p>
+        <p class="number">0812906899, 08077462032</p>
+        <p id="date">Date <span id="time" >Time</span></p>
+        
+        <table id="omoomupo">
+            <tr>
+                <th> Description</th>
+                <th>Price per unit</th>
+                <th>Qty </th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>MTN 100</td>
+                <td>98</td>
+                <td id="qty1"> </td>
+                <td id="total1"></td>
+
+            </tr>
+
+            <tr class="bat">
+                <td>MTN 200 </td>
+                <td> 196</td>
+                <td id="qty2"> </td>
+                <td id="total2"> </td>
+            </tr>
+
+            <tr>
+                <td>MTN 500 </td>
+                <td>  490</td>
+                <td id="qty3"></td>
+                <td id="total3"> </td>
+            </tr>
+
+            <tr class="bat">
+                <td>MTN 1000  </td>
+                <td>980</td>
+                <td id="qty4"></td>
+                <td id="total4"></td>
+            </tr>
+
+            <tr>
+                <td>AIRTEL 100 </td>
+                <td> 96.5</td>
+                <td id="qty5"> </td>
+                <td id="total5"> </td>
+            </tr>
+            <tr class="bat">
+                <td>AIRTEL 200 </td>
+                <td>  193</td>
+                <td id="qty6"> </td>
+                <td id="total6"> </td>
+            </tr>
+
+            <tr>
+                <td>AIRTEL 500 </td>
+                <td>485  </td>
+                <td id="qty7"> </td>
+                <td id="total7"> </td>
+            </tr>
+
+            <tr class="bat">
+                <td>AIRTEL 1000 </td>
+                <td>  970</td>
+                <td id="qty8"> </td>
+                <td id="total8"> </td>
+            </tr>
+
+            <tr>
+                <td>GLO 100 </td>
+                <td>  96.5</td>
+                <td id="qty9"> </td>
+                <td id="total9"> </td>
+            </tr>
+
+            <tr class="bat">
+                <td>GLO 200 </td>
+                <td>  193</td>
+                <td id="qty10"> </td>
+                <td id="total10"> </td>
+            </tr>
+
+            <tr>
+                <td>GLO 500 </td>
+                <td>  485</td>
+                <td id="qty11"> </td>
+                <td id="total11"> </td>
+            </tr>
+
+            <tr class="bat">
+                <td>GLO 1000 </td>
+                <td>970  </td>
+                <td id="qty12"> </td>
+                <td id="total12"> </td>
+            </tr>
+
+            <tr>
+                <td>9MOBILE 100 </td>
+                <td>  96</td>
+                <td id="qty13"> </td>
+                <td id="total13"> </td>
+            </tr>
+
+            <tr class="bat">
+                <td>9MOBILE 200 </td>
+                <td>  192</td>
+                <td id="qty14"> </td>
+                <td id="total14"> </td>
+            </tr>
+
+            <tr>
+                <td>9MOBILE 500 </td>
+                <td>  480</td>
+                <td id="qty15"> </td>
+                <td id="total15"> </td>
+            </tr>
+
+            <tr class="bat">
+                <td>9MOBILE 1000 </td>
+                <td>960  </td>
+                <td id="qty16"></td>
+                <td id="total16" > </td>
+            </tr>
+
+            <tr class="bat">
+                <td>  </td>
+                <td > </td>
+                <td> Total Amount</td>
+                <td id="total"> </td>
+            </tr>
+            
+        </table>    
+        
+        <button onclick="payment() " class="pay">Payment</button><br>
+        <button onclick="codespeedy()">Print</button>
+        <h3 id="payment">Amount to pay</h3>
+        <p id="notice">Kindly check your items to confirm receipts. Items <br>bought are not returnable.Thanks for your patronage</p>
+    </div>
+        <script src="java.js"></script>
+    </body>
+</html>
+
+

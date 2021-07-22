@@ -1,0 +1,76 @@
+*{
+background: #e4e4e4;
+}
+body{
+    display: flex;
+}
+#selectOption{
+    border: 2px solid blue;
+    padding: 5px;
+}
+.select{
+    border: 1px solid none;
+    padding: 5px;
+    margin: 0px 5px;
+    width: 125px;
+    
+}
+.num{
+    width: 125px;
+    height:20px;
+    margin: 0px 5px;
+    background: red;
+}
+.add{
+    border: 1px solid blue;
+    padding: 5px;
+    margin: 0px 5px;
+    background: blue;
+    border-radius: 2px;
+    border: 1px solid green;
+}
+.add:hover{
+    background: red;
+}
+.num{
+    border: 1px solid blue;
+    padding: 5px;
+    margin: 5px 5px;
+}
+.calculate:hover{
+    background: aqua;
+    align-self: center;
+}
+
+/*Table*/
+#table{
+    border: 2px solid blue;
+    padding: 5px;
+    margin: 0px 20px;
+    color: ;
+}
+
+.number{
+    text-align: center
+}
+#omoomupo{
+       border: 1px solid black;
+}
+tr{ text-align: center;
+    background: #;
+}
+th{
+    background: #e4e4e4;
+}
+.bat{
+        
+
+}
+#notice{
+    text-align: center;
+}
+
+.pay{
+    justify-content: center;
+    margin: 5px 0px;
+}
